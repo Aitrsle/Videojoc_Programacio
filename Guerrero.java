@@ -34,7 +34,7 @@ public class Guerrero extends Entidad {
         setVida(getVida() - danyFinal);
     }
 
-    // CARTA ESPECIAL
+    // CARTA 
     public void copEscut() {
         System.out.println(getNombre() + " usa Golpe de Escudo!");
     }
