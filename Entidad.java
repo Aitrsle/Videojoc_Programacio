@@ -4,6 +4,11 @@ public abstract class Entidad {
     private int nivel;
     private int vida;
 
+    public Entidad (String nombre, int nivel, int vida) {
+        this.nombre = nombre;
+        this.nivel = nivel;
+        this.vida = vida;
+    }
     public String getNombre() { 
         return nombre; 
     }
