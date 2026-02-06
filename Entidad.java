@@ -4,16 +4,24 @@ public abstract class Entidad {
     private int nivel;
     private int vida;
 
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+    public String getNombre() { 
+        return nombre; 
+    }
+    public void setNombre(String nombre) { 
+        this.nombre = nombre;
+     }
 
-    public int getNivel() { return nivel; }
+    public int getNivel() { 
+        return nivel; 
+    }
     public void setNivel(int n) {
         if (n == this.nivel + 1) this.nivel = n;
         else System.out.println("ACCÉS DENEGAT");
     }
 
-    public int getVida() { return vida; }
+    public int getVida() {
+         return vida;
+         }
     public void setVida(int v) {
         if (v < 0) this.vida = 0;
         else this.vida = v;
