@@ -21,6 +21,6 @@ public class Mago extends Entidad {
     public void Atacar() {
         setDaño(1);
         setMana(getMana() - 1);
-        System.out.println(getNombre() + " llança encanteri. Dany: " + getDaño());
+        System.out.println(getNombre() + " llança magia // Dany: " + getDaño());
     }
 }

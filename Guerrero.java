@@ -20,7 +20,7 @@ public class Guerrero extends Entidad {
     @Override
     public void Atacar() {
         setDaño(2);
-        System.out.println(getNombre() + " ataca físicament. Dany: " + getDaño());
+        System.out.println(getNombre() + " ataca físicament // Dany: " + getDaño());
     }
 
     @Override

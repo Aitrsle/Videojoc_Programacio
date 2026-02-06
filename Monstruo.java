@@ -12,6 +12,6 @@ public class Monstruo extends Entidad {
     @Override
     public void Atacar() {
         setDaño(3);
-        System.out.println(getNombre() + " ataca salvatge. Dany: " + getDaño());
+        System.out.println(getNombre() + " ataca salvatge // Dany: " + getDaño());
     }
 }
