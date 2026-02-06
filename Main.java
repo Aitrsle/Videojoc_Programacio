@@ -3,32 +3,31 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Entidad> lista = new ArrayList<>();
 
-        Guerrero guerrero = new Guerrero();
-        guerrero.setNombre("Guerrero");
-        guerrero.setVida(100);
-        guerrero.setNivel(1);
-        guerrero.setResistencia(5);
+        ArrayList<Entidad> llista = new ArrayList<>();
 
-        Mago mago = new Mago();
-        mago.setNombre("Mago");
-        mago.setVida(80);
-        mago.setNivel(1);
-        mago.setMana(50);
+        Guerrero g = new Guerrero("Guerrero", 1, 100, 5);
+        Mago m = new Mago("Mago", 1, 80, 10);
+        Monstruo mo = new Monstruo("Monstruo", 1, 60);
 
-        Monstruo monstruo = new Monstruo();
-        monstruo.setNombre("Monstruo");
-        monstruo.setVida(50);
-        monstruo.setNivel(1);
+        llista.add(g); // Carta 1 
+        llista.add(m); // Carta 2   
+        llista.add(mo); // Carta 3
 
-        lista.add(guerrero);
-        lista.add(mago);
-        lista.add(monstruo);
-        
-        for (Entidad e : lista) {
-            e.Atacar();
+
+        for (Entidad e : llista) {
+            e.atacar();
         }
 
+        System.out.println("PRUEBA DE ENCAPSULAMIENTO:");
+
+        g.setNivel(10); 
+        g.setVida(-500);  
+
+        System.out.println(g.getNombre() + " Vida actual: " + g.getVida());
+
+        g.copEscut();
+        m.bolaDeFoc();
+        mo.rugido();
     }
 }
